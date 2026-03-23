@@ -147,7 +147,7 @@
             background: rgba(0, 0, 0, 0.75);
             backdrop-filter: blur(12px);
             border-radius: 2rem;
-            padding: 1.5rem;
+            padding: 2rem;
             border: 1px solid rgba(220, 38, 38, 0.3);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
         }
@@ -232,32 +232,32 @@
                 <!-- GRID PRINCIPAL DESKTOP (Linha única) -->
                 <div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16">
                     
-                    <!-- LADO ESQUERDO (Texto + Foto) -->
-                    <div class="w-full lg:w-[65%] flex flex-col">
+                    <!-- LADO ESQUERDO (Texto + Foto + Descrição Reordenados no Desktop) -->
+                    <div class="w-full lg:w-[65%] flex flex-col items-center lg:items-start">
                         
-                        <!-- Texto -->
-                        <div class="reveal active text-center lg:text-left mb-8">
-                            <div class="inline-flex items-center gap-2 bg-red-950/40 text-red-500 border border-red-900/30 px-4 py-1.5 rounded-full text-[10px] md:text-[11px] font-bold uppercase tracking-widest mb-6 mx-auto lg:mx-0">
-                                <i data-feather="lock" class="w-3 h-3"></i>
-                                <span data-i18n="discrete_shipping">Gwarantowana dyskretna przesyłka</span>
-                            </div>
-                            
-                            <h1 data-i18n="headline" class="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 leading-tight text-white uppercase italic">
-                                ODZYSKAJ SWOJĄ <span class="text-red-600">ENERGIĘ</span> I PEWNOŚĆ SIEBIE
-                            </h1>
-                            
-                            <p data-i18n="subheadline" class="text-base md:text-lg lg:text-xl text-slate-300 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                                Naturalne wsparcie dla mężczyzn, którzy chcą znów czuć się pewnie każdego dnia. Primal Origin wspiera sprawność, energię i ogólną kondycję organizmu.
-                            </p>
+                        <!-- 1. Badge (Sempre primeiro) -->
+                        <div class="order-1 inline-flex items-center gap-2 bg-red-950/40 text-red-500 border border-red-900/30 px-4 py-1.5 rounded-full text-[10px] md:text-[11px] font-bold uppercase tracking-widest mb-6">
+                            <i data-feather="lock" class="w-3 h-3"></i>
+                            <span data-i18n="discrete_shipping">Gwarantowana dyskretna przesyłka</span>
                         </div>
+                        
+                        <!-- 2. Título (Sempre segundo) -->
+                        <h1 data-i18n="headline" class="order-2 text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 leading-tight text-white uppercase italic text-center lg:text-left">
+                            ODZYSKAJ SWOJĄ <span class="text-red-600">ENERGIĘ</span> I PEWNOŚĆ SIEBIE
+                        </h1>
 
-                        <!-- Foto do Produto (Abaixo do Título no Mobile / Ao lado ou abaixo no Desktop dentro do 65%) -->
-                        <div class="flex justify-center lg:justify-start">
+                        <!-- 3. Foto do Produto (Terceiro no Desktop via order-3, Quarto no Mobile via order-4) -->
+                        <div class="order-4 lg:order-3 w-full flex justify-center lg:justify-start mb-8 lg:mb-10">
                             <div class="relative">
                                 <div class="absolute inset-0 bg-red-600 blur-[60px] md:blur-[100px] opacity-15 md:opacity-20"></div>
                                 <img src="images/imgi_4_product1.png" alt="Primal Origin Product" class="relative z-10 w-full max-w-[260px] md:max-w-[320px] lg:max-w-[340px] drop-shadow-[0_20px_50px_rgba(220,38,38,0.4)]">
                             </div>
                         </div>
+
+                        <!-- 4. Descrição (Terceiro no Mobile via order-3, Quarto no Desktop via order-4) -->
+                        <p data-i18n="subheadline" class="order-3 lg:order-4 text-base md:text-lg lg:text-xl text-slate-300 font-medium leading-relaxed max-w-2xl text-center lg:text-left mb-6 lg:mb-0">
+                            Naturalne wsparcie dla mężczyzn, którzy chcą znów czuć się pewnie każdego dnia. Primal Origin wspiera sprawność, energię i ogólną kondycję organizmu.
+                        </p>
                     </div>
 
                     <!-- LADO DIREITO (Países) -->
