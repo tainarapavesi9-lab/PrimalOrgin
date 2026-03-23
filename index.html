@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
-    <!-- ================= SEO CORE ================= -->
-    <title>Primal Origin™ | Natural Joint Support - 50% Off</title>
-    <meta name="description" content="Primal Origin™ helps reduce joint discomfort and support daily mobility. 50% discount offer. Payment on delivery.">
-    <meta name="robots" content="index, follow">
-
+    <!-- ================= SEO BÁSICO ================= -->
+    <title>Primal Origin™ | Energy & Confidence for Men</title>
+    <meta name="description" content="Primal Origin™ supports male energy, performance, and overall health. Natural formula, no prescription needed.">
+    
     <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lexend:wght@700;800;900&display=swap" rel="stylesheet">
@@ -44,12 +43,12 @@
         .reveal.active { opacity: 1; transform: translateY(0); }
         
         .glass-card {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.75);
             backdrop-filter: blur(12px);
             border-radius: 2rem;
             padding: 2rem;
             border: 1px solid rgba(220, 38, 38, 0.4);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
         }
 
         .destination-btn {
@@ -76,7 +75,6 @@
             height: 26px;
             object-fit: cover;
             border-radius: 4px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
 
         .info-badge {
@@ -104,7 +102,7 @@
             transition: all 0.3s ease;
             color: #cbd5e1;
         }
-        .faq-accordion-item.active .faq-content { max-height: 200px; padding-bottom: 1.5rem; }
+        .faq-accordion-item.active .faq-content { max-height: 250px; padding-bottom: 1.5rem; }
 
         .cta-button {
             background: linear-gradient(to right, #dc2626, #991b1b);
@@ -134,16 +132,17 @@
                     
                     <div class="reveal active text-center lg:text-left">
                         <div class="inline-flex items-center gap-2 bg-red-950/50 text-red-500 border border-red-900/50 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6">
-                            <i data-feather="truck" class="w-3 h-3"></i>
-                            <span data-i18n="shipping_status">In Stock: Express 24h Delivery</span>
+                            <i data-feather="lock" class="w-3 h-3"></i>
+                            <span data-i18n="discrete_shipping">Discrete Shipping Guaranteed</span>
                         </div>
                         <h1 data-i18n="headline" class="text-4xl md:text-5xl lg:text-7xl font-black mb-6 leading-tight text-white uppercase italic">
-                            RECLAIM THE <span class="text-red-600">JOY</span> OF MOVEMENT
+                            RECLAIM YOUR <span class="text-red-600">ENERGY</span> AND CONFIDENCE
                         </h1>
                         <p data-i18n="subheadline" class="text-lg md:text-xl text-slate-300 mb-10 font-medium leading-relaxed">
-                            A natural path to flexibility and comfort for your joints. <span class="text-red-500 font-bold">Primal Origin™</span> is developed for those who refuse to be limited.
+                            Natural support for men who want to feel confident every day. Primal Origin supports performance, energy, and overall body condition.
                         </p>
                         
+                        <!-- Produto -->
                         <div class="flex justify-center lg:justify-start mb-12">
                             <div class="relative">
                                 <div class="absolute inset-0 bg-red-600 blur-[100px] opacity-25"></div>
@@ -153,17 +152,21 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
                             <div class="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
-                                <i data-feather="shield" class="text-red-600 w-5 h-5"></i>
-                                <span data-i18n="check1" class="text-sm font-bold">Cartilage Support</span>
+                                <i data-feather="zap" class="text-red-600 w-5 h-5"></i>
+                                <span data-i18n="check1" class="text-sm font-bold italic">Libido & Energy Support</span>
                             </div>
                             <div class="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
-                                <i data-feather="zap" class="text-red-600 w-5 h-5"></i>
-                                <span data-i18n="check2" class="text-sm font-bold">Fast-Acting Relief</span>
+                                <i data-feather="activity" class="text-red-600 w-5 h-5"></i>
+                                <span data-i18n="check2" class="text-sm font-bold italic">Efficiency & Confidence</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
+                                <i data-feather="check" class="text-red-600 w-5 h-5"></i>
+                                <span data-i18n="check3" class="text-sm font-bold italic">Natural Formula</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Selection Card -->
+                    <!-- Seleção de País -->
                     <div id="selection" class="reveal active delay-200 flex justify-center lg:justify-end scroll-mt-24">
                         <div class="glass-card w-full max-w-md">
                             <div class="text-center mb-8">
@@ -171,7 +174,6 @@
                                 <div class="h-1 w-16 bg-red-600 mx-auto rounded-full"></div>
                             </div>
                             
-                            <!-- Slovakia -->
                             <a href="https://tl-track.com/tracker/vZcs" class="destination-btn group">
                                 <div class="flex items-center gap-4">
                                     <img src="https://flagcdn.com/w80/sk.png" class="flag-img" alt="Slovakia">
@@ -180,7 +182,6 @@
                                 <i data-feather="chevron-right" class="text-slate-600 group-hover:text-red-500"></i>
                             </a>
 
-                            <!-- Czechia -->
                             <a href="https://tl-track.com/tracker/vZcr" class="destination-btn group">
                                 <div class="flex items-center gap-4">
                                     <img src="https://flagcdn.com/w80/cz.png" class="flag-img" alt="Czechia">
@@ -189,7 +190,6 @@
                                 <i data-feather="chevron-right" class="text-slate-600 group-hover:text-red-500"></i>
                             </a>
 
-                            <!-- Poland -->
                             <a href="https://tl-track.com/tracker/vZcq" class="destination-btn group">
                                 <div class="flex items-center gap-4">
                                     <img src="https://flagcdn.com/w80/pl.png" class="flag-img" alt="Poland">
@@ -199,11 +199,18 @@
                             </a>
 
                             <div class="mt-8 info-badge">
-                                <p data-i18n="promo_text" class="text-red-500 font-black text-xs uppercase tracking-widest mb-2">Exclusive Web Offer</p>
-                                <h4 data-i18n="discount_tag" class="text-4xl font-black text-white mb-4">50% DISCOUNT</h4>
-                                <div class="flex justify-center gap-4 text-[10px] text-slate-400 font-bold uppercase">
-                                    <div class="flex items-center gap-1"><i data-feather="check" class="w-3 h-3"></i> Pay on Delivery</div>
-                                    <div class="flex items-center gap-1"><i data-feather="check" class="w-3 h-3"></i> Free Shipping</div>
+                                <p data-i18n="promo_text" class="text-red-500 font-black text-xs uppercase tracking-widest mb-2">Exclusive Online Offer</p>
+                                <h4 data-i18n="discount_tag" class="text-4xl font-black text-white mb-4 italic">50% DISCOUNT</h4>
+                                <div class="space-y-2">
+                                    <div class="flex justify-center gap-2 text-[10px] text-slate-300 font-bold uppercase">
+                                        <i data-feather="check" class="w-3 h-3 text-red-600"></i> <span data-i18n="benefit1">Pay on Delivery</span>
+                                    </div>
+                                    <div class="flex justify-center gap-2 text-[10px] text-slate-300 font-bold uppercase">
+                                        <i data-feather="check" class="w-3 h-3 text-red-600"></i> <span data-i18n="benefit2">Fast Shipping</span>
+                                    </div>
+                                    <div class="flex justify-center gap-2 text-[10px] text-slate-300 font-bold uppercase">
+                                        <i data-feather="check" class="w-3 h-3 text-red-600"></i> <span data-i18n="benefit3">Discrete Shipping</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -212,11 +219,11 @@
             </div>
         </section>
 
-        <!-- Social Proof -->
+        <!-- Testemunhos -->
         <section class="py-20 bg-black/50 backdrop-blur-sm border-y border-red-900/30">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 data-i18n="reviews_title" class="text-3xl md:text-5xl font-black text-white mb-4 uppercase italic">Thousands of satisfied users</h2>
+                    <h2 data-i18n="reviews_title" class="text-3xl md:text-5xl font-black text-white mb-4 uppercase italic">THOUSANDS OF SATISFIED MEN</h2>
                     <div class="flex justify-center gap-1 text-red-600">
                         <i data-feather="star" class="fill-current w-5 h-5"></i>
                         <i data-feather="star" class="fill-current w-5 h-5"></i>
@@ -228,16 +235,16 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-black/80 p-8 rounded-3xl border border-white/5">
-                        <p class="text-slate-400 italic mb-6 leading-relaxed">"After years of knee pain, I finally found something that works. I feel 10 years younger."</p>
-                        <p class="font-black text-white text-sm uppercase tracking-wider">— Peter, 58</p>
+                        <p class="text-slate-400 italic mb-6 leading-relaxed" data-i18n="rev1_text">"After a few weeks I feel much better and have more energy."</p>
+                        <p class="font-black text-white text-sm uppercase tracking-wider" data-i18n="rev1_name">— Marek, 54</p>
                     </div>
                     <div class="bg-black/80 p-8 rounded-3xl border border-white/5">
-                        <p class="text-slate-400 italic mb-6 leading-relaxed">"I can finally take long walks again. Primal Origin was a life changer for me!"</p>
-                        <p class="font-black text-white text-sm uppercase tracking-wider">— Anna, 62</p>
+                        <p class="text-slate-400 italic mb-6 leading-relaxed" data-i18n="rev2_text">"Simple product, but it works. I feel more self-confident."</p>
+                        <p class="font-black text-white text-sm uppercase tracking-wider" data-i18n="rev2_name">— Andrzej, 47</p>
                     </div>
                     <div class="bg-black/80 p-8 rounded-3xl border border-white/5">
-                        <p class="text-slate-400 italic mb-6 leading-relaxed">"Great product and fast shipping. I paid only when I received the package, very secure."</p>
-                        <p class="font-black text-white text-sm uppercase tracking-wider">— Marek, 54</p>
+                        <p class="text-slate-400 italic mb-6 leading-relaxed" data-i18n="rev3_text">"Fast delivery, payment on receipt gives peace of mind."</p>
+                        <p class="font-black text-white text-sm uppercase tracking-wider" data-i18n="rev3_name">— Piotr, 58</p>
                     </div>
                 </div>
             </div>
@@ -254,7 +261,7 @@
                             <i data-feather="chevron-down" class="faq-icon w-5 h-5"></i>
                         </button>
                         <div class="faq-content">
-                            <p data-i18n="faqa1">We process orders immediately. Delivery usually takes 1 to 3 business days.</p>
+                            <p data-i18n="faqa1">Delivery usually takes 2-4 business days.</p>
                         </div>
                     </div>
                     <div class="faq-accordion-item">
@@ -263,7 +270,7 @@
                             <i data-feather="chevron-down" class="faq-icon w-5 h-5"></i>
                         </button>
                         <div class="faq-content">
-                            <p data-i18n="faqa2">No. You pay securely in cash or by card to the courier only upon receipt of the package.</p>
+                            <p data-i18n="faqa2">No. You only pay upon receipt of your order.</p>
                         </div>
                     </div>
                 </div>
@@ -274,14 +281,13 @@
     <!-- Footer -->
     <footer class="bg-black py-16 border-t border-white/5">
         <div class="container mx-auto px-6 text-center">
-            <img src="images/imgi_2_logo.png" alt="Logo" class="h-8 mx-auto mb-10 opacity-40">
+            <img src="images/imgi_2_logo.png" alt="Logo" class="h-8 mx-auto mb-10 opacity-30">
             <div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mb-10 text-[10px] font-bold uppercase tracking-widest text-slate-600">
-                <a href="#" class="hover:text-red-500 transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-red-500 transition-colors">Terms of Service</a>
-                <a href="#" class="hover:text-red-500 transition-colors">Contact</a>
+                <a href="#" class="hover:text-red-500">Privacy Policy</a>
+                <a href="#" class="hover:text-red-500">Terms of Service</a>
+                <a href="#" class="hover:text-red-500">Contact</a>
             </div>
             <p class="text-[9px] text-slate-700 uppercase tracking-[0.2em] mb-4">&copy; 2026 PRIMAL ORIGIN WELLNESS. ALL RIGHTS RESERVED.</p>
-            <p class="text-[8px] text-slate-800 max-w-2xl mx-auto italic leading-relaxed">Results may vary. This product is a dietary supplement and is not intended to replace a balanced diet.</p>
         </div>
     </footer>
 
@@ -289,82 +295,108 @@
         const translations = {
             en: {
                 order_btn: "ORDER NOW",
-                shipping_status: "In Stock: Express 24h Delivery",
-                headline: "RECLAIM THE JOY OF MOVEMENT",
-                subheadline: "A natural path to flexibility and comfort for your joints. Primal Origin™ is developed for those who refuse to be limited.",
+                discrete_shipping: "Discrete Shipping Guaranteed",
+                headline: "RECLAIM YOUR ENERGY AND CONFIDENCE",
+                subheadline: "Natural support for men who want to feel confident every day. Primal Origin supports performance, energy, and overall body condition.",
                 region_label: "Select your shipping country:",
-                promo_text: "Exclusive Web Offer",
+                promo_text: "Exclusive Online Offer",
                 discount_tag: "50% DISCOUNT",
-                reviews_title: "Thousands of satisfied users",
+                benefit1: "Pay on Delivery",
+                benefit2: "Fast Shipping",
+                benefit3: "Discrete Shipping",
+                reviews_title: "Thousands of satisfied men",
+                rev1_text: "After a few weeks I feel much better and have more energy.",
+                rev1_name: "— Marek, 54",
+                rev2_text: "Simple product, but it works. I feel more self-confident.",
+                rev2_name: "— Andrzej, 47",
+                rev3_text: "Fast delivery, payment on receipt gives peace of mind.",
+                rev3_name: "— Piotr, 58",
                 faq_title: "FAQ",
-                check1: "Cartilage Support",
-                check2: "Fast-Acting Relief",
+                check1: "Libido & Energy Support",
+                check2: "Efficiency & Confidence",
+                check3: "Natural Formula",
                 faqq1: "How long does delivery take?",
-                faqa1: "We process orders immediately. Delivery usually takes 1 to 3 business days.",
+                faqa1: "Delivery usually takes 2-4 business days.",
                 faqq2: "Do I need to pay in advance?",
-                faqa2: "No. You pay securely in cash or by card to the courier only upon receipt of the package."
-            },
-            sk: {
-                order_btn: "OBJEDNAŤ TERAZ",
-                shipping_status: "Skladom: Expedícia do 24 hodín",
-                headline: "ZÍSKAJTE SPÄŤ RADOSŤ Z POHYBU",
-                subheadline: "Prírodná cesta k flexibilite a komfortu vašich kĺbov. Primal Origin™ je vyvinutý pre tých, ktorí odmietajú obmedzenia.",
-                region_label: "Vyberte krajinu doručenia:",
-                promo_text: "Exkluzívna webová ponuka",
-                discount_tag: "ZĽAVA 50%",
-                reviews_title: "Tisíce spokojných užívateľov",
-                faq_title: "Časté otázky",
-                check1: "Podpora chrupaviek",
-                check2: "Rýchly účinok",
-                faqq1: "Ako dlho trvá doručenie?",
-                faqa1: "Objednávky spracovávame okamžite. Doručenie zvyčajne trvá 1 až 3 pracovné dni.",
-                faqq2: "Musím platiť vopred?",
-                faqa2: "Nie. Platíte bezpečne v hotovosti alebo kartou kuriérovi až pri prevzatí balíka."
-            },
-            cz: {
-                order_btn: "OBJEDNAT NYNÍ",
-                shipping_status: "Skladem: Expedice do 24 hodin",
-                headline: "ZÍSKEJTE ZPĚT RADOST Z POHYBU",
-                subheadline: "Přírodní cesta k flexibilitě a komfortu vašich kloubů. Primal Origin™ je vyvinut pro ty, kteří odmítají omezení.",
-                region_label: "Vyberte zemi doručení:",
-                promo_text: "Exkluzivní webová nabídka",
-                discount_tag: "SLEVA 50%",
-                reviews_title: "Tisíce spokojených uživatelů",
-                faq_title: "Časté dotazy",
-                check1: "Podpora chrupavek",
-                check2: "Rychlý účinek",
-                faqq1: "Jak dlouho trvá doručení?",
-                faqa1: "Objednávky zpracováváme okamžitě. Doručení kurýrem obvykle trvá 1 až 3 pracovní dny.",
-                faqq2: "Musím platit předem?",
-                faqa2: "Ne. Platíte bezpečně v hotovosti nebo kartou kurýrovi až při převzetí balíku."
+                faqa2: "No. You only pay upon receipt of your order."
             },
             pl: {
                 order_btn: "ZAMÓW TERAZ",
-                shipping_status: "W magazynie: Ekspresowa dostawa 24h",
-                headline: "ODZYSKAJ RADOŚĆ Z RUCHU",
-                subheadline: "Naturalna droga do elastycznosti Twoich stawów. Primal Origin™ został stworzony dla tych, którzy nie uznają ograniczeń.",
-                region_label: "Wybierz kraj dostawy:",
-                promo_text: "Ekskluzywna oferta internetowa",
-                discount_tag: "RABAT 50%",
-                reviews_title: "Tysiące zadowolonych użytkowników",
-                faq_title: "Często zadawane pytania",
-                check1: "Wsparcie chrząstki",
-                check2: "Szybka ulga",
+                discrete_shipping: "Gwarantowana dyskretna przesyłka",
+                headline: "ODZYSKAJ SWOJĄ ENERGIĘ I PEWNOŚĆ SIEBIE",
+                subheadline: "Naturalne wsparcie dla mężczyzn, którzy chcą znów czuć się pewnie każdego dnia. Primal Origin wspiera sprawność, energię i ogólną kondycję organizmu.",
+                region_label: "WYBIERZ SWÓJ KRAJ DOSTAWY",
+                promo_text: "OFERTA SPECJALNA ONLINE",
+                discount_tag: "50% ZNIŻKI",
+                benefit1: "Płatność przy odbiorze",
+                benefit2: "Szybka dostawa",
+                benefit3: "Dyskretna przesyłka",
+                reviews_title: "TYSIĄCE ZADOWOLONYCH MĘŻCZYZN",
+                rev1_text: "„Po kilku tygodniach czuję się znacznie lepiej i mam więcej energii.”",
+                rev1_name: "— Marek, 54",
+                rev2_text: "„Prosty produkt, ale działa. Czuję większą pewność siebie.”",
+                rev2_name: "— Andrzej, 47",
+                rev3_text: "„Dostawa szybka, płatność przy odbiorze daje spokój.”",
+                rev3_name: "— Piotr, 58",
+                faq_title: "FAQ",
+                check1: "Wsparcie libido i energii",
+                check2: "Lepsza wydolność i pewność siebie",
+                check3: "Naturalna formuła bez recepty",
                 faqq1: "Jak długo trwa dostawa?",
-                faqa1: "Zamówienia przetwarzamy natychmiast. Dostawa trwa zazwyczaj od 1 do 3 dni roboczych.",
+                faqa1: "Dostawa zazwyczaj trwa 2–4 dni robocze.",
                 faqq2: "Czy muszę płacić z góry?",
-                faqa2: "Nie. Płacisz bezpiecznie gotówką lub kartą u kuriera dopiero przy odbiorze przesyłki."
+                faqa2: "Nie. Płacisz dopiero przy odbiorze zamówienia."
+            },
+            sk: {
+                order_btn: "OBJEDNAŤ TERAZ",
+                discrete_shipping: "Garantované diskrétne doručenie",
+                headline: "ZÍSKAJTE SPÄŤ SVOJU ENERGIU A SEBAVEDOMIE",
+                subheadline: "Prírodná podpora pre mužov, ktorí sa chcú cítiť sebaisto každý deň. Primal Origin podporuje výkonnosť, energiu a celkovú kondíciu.",
+                region_label: "Vyberte krajinu doručenia:",
+                promo_text: "Exkluzívna online ponuka",
+                discount_tag: "ZĽAVA 50%",
+                benefit1: "Platba pri prevzatí",
+                benefit2: "Rýchle doručenie",
+                benefit3: "Diskrétne balenie",
+                reviews_title: "Tisíce spokojných mužov",
+                faq_title: "Časté otázky",
+                check1: "Podpora libida a energie",
+                check2: "Vyššia výkonnosť a sebavedomie",
+                check3: "Prírodné zloženie",
+                faqq1: "Ako dlho trvá doručenie?",
+                faqa1: "Doručenie zvyčajne trvá 2–4 pracovné dni.",
+                faqq2: "Musím platiť vopred?",
+                faqa2: "Nie. Platíte až pri prevzatí objednávky."
+            },
+            cz: {
+                order_btn: "OBJEDNAT NYNÍ",
+                discrete_shipping: "Garantované diskrétní doručení",
+                headline: "ZÍSKEJTE ZPĚT SVOU ENERGII A SEBEVĚDOMÍ",
+                subheadline: "Přírodní podpora pro muže, kteří se chtějí cítit sebejistě každý den. Primal Origin podporuje výkonnost, energii a celkovou kondici.",
+                region_label: "Vyberte zemi doručení:",
+                promo_text: "Exkluzivní online nabídka",
+                discount_tag: "SLEVA 50%",
+                benefit1: "Platba při převzetí",
+                benefit2: "Rychlé doručení",
+                benefit3: "Diskrétní balení",
+                reviews_title: "Tisíce spokojených mužů",
+                faq_title: "Časté dotazy",
+                check1: "Podpora libida a energie",
+                check2: "Vyšší výkonnost a sebevědomí",
+                check3: "Přírodní složení",
+                faqq1: "Jak dlouho trvá doručení?",
+                faqa1: "Doručení obvykle trvá 2–4 pracovní dny.",
+                faqq2: "Musím platit předem?",
+                faqa2: "Ne. Platíte až při převzetí objednávky."
             }
         };
 
         function applyLanguage() {
             const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
-            let lang = 'en'; // Padrão: Inglês
-            
-            // Detecção simples para tradução automática sem redirecionamento
-            if (userLang.startsWith('sk')) lang = 'sk';
+            let lang = 'en'; 
+            if (userLang.startsWith('pl')) lang = 'pl';
+            else if (userLang.startsWith('sk')) lang = 'sk';
             else if (userLang.startsWith('cs') || userLang.startsWith('cz')) lang = 'cz';
-            else if (userLang.startsWith('pl')) lang = 'pl';
             
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
