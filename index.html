@@ -96,20 +96,6 @@
     }
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https://primal-orgin.vercel.app/",
-      "name": "Primal Orgin Official",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://primal-orgin.vercel.app/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
     <style>
         :root {
             --brand-black: #000000;
@@ -140,7 +126,7 @@
             transition: opacity 0.3s;
         }
 
-        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
         
         .glass-card {
@@ -175,7 +161,7 @@
             width: 34px;
             height: 24px;
             object-fit: cover;
-            border-radius: 3px;
+            border-radius: 4px;
         }
 
         .info-badge {
@@ -208,7 +194,29 @@
         .cta-button {
             background: linear-gradient(to right, #dc2626, #991b1b);
             box-shadow: 0 0 25px rgba(220, 38, 38, 0.5);
+            animation: pulse-light 3s infinite;
         }
+
+        /* --- ANIMAÇÕES ADICIONAIS --- */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float { animation: float 5s ease-in-out infinite; }
+
+        @keyframes pulse-light {
+            0% { box-shadow: 0 0 10px rgba(220, 38, 38, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(220, 38, 38, 0.6); }
+            100% { box-shadow: 0 0 10px rgba(220, 38, 38, 0.3); }
+        }
+
+        @keyframes glow {
+            0% { opacity: 0.15; transform: scale(1); }
+            50% { opacity: 0.25; transform: scale(1.1); }
+            100% { opacity: 0.15; transform: scale(1); }
+        }
+        .animate-glow { animation: glow 6s ease-in-out infinite; }
     </style>
 </head>
 <body class="antialiased">
@@ -241,21 +249,21 @@
                             <span data-i18n="discrete_shipping">Gwarantowana dyskretna przesyłka</span>
                         </div>
                         
-                        <!-- 2. Título (Sempre segundo) -->
-                        <h1 data-i18n="headline" class="order-2 text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 leading-tight text-white uppercase italic text-center lg:text-left">
+                        <!-- 2. Título -->
+                        <h1 data-i18n="headline" class="order-2 text-2xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 leading-tight text-white uppercase italic text-center lg:text-left">
                             ODZYSKAJ SWOJĄ <span class="text-red-600">ENERGIĘ</span> I PEWNOŚĆ SIEBIE
                         </h1>
 
-                        <!-- 3. Foto do Produto (Terceiro no Desktop via order-3, Quarto no Mobile via order-4) -->
+                        <!-- 3. Foto do Produto (Animação de flutuação adicionada) -->
                         <div class="order-4 lg:order-3 w-full flex justify-center lg:justify-start mb-8 lg:mb-10">
                             <div class="relative">
-                                <div class="absolute inset-0 bg-red-600 blur-[60px] md:blur-[100px] opacity-15 md:opacity-20"></div>
-                                <img src="images/imgi_4_product1.png" alt="Primal Origin Product" class="relative z-10 w-full max-w-[260px] md:max-w-[320px] lg:max-w-[340px] drop-shadow-[0_20px_50px_rgba(220,38,38,0.4)]">
+                                <div class="absolute inset-0 bg-red-600 blur-[60px] md:blur-[100px] animate-glow"></div>
+                                <img src="images/imgi_4_product1.png" alt="Primal Origin Product" class="relative z-10 w-full max-w-[260px] md:max-w-[320px] lg:max-w-[340px] drop-shadow-[0_20px_50px_rgba(220,38,38,0.4)] animate-float">
                             </div>
                         </div>
 
-                        <!-- 4. Descrição (Terceiro no Mobile via order-3, Quarto no Desktop via order-4) -->
-                        <p data-i18n="subheadline" class="order-3 lg:order-4 text-base md:text-lg lg:text-xl text-slate-300 font-medium leading-relaxed max-w-2xl text-center lg:text-left mb-6 lg:mb-0">
+                        <!-- 4. Descrição -->
+                        <p data-i18n="subheadline" class="order-3 lg:order-4 text-sm md:text-lg lg:text-xl text-slate-300 font-medium leading-relaxed max-w-2xl text-center lg:text-left mb-6 lg:mb-0">
                             Naturalne wsparcie dla mężczyzn, którzy chcą znów czuć się pewnie każdego dnia. Primal Origin wspiera sprawność, energię i ogólną kondycję organizmu.
                         </p>
                     </div>
@@ -328,15 +336,15 @@
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-black/80 p-8 rounded-3xl border border-white/5 text-center md:text-left">
+                    <div class="bg-black/80 p-8 rounded-3xl border border-white/5 text-center md:text-left reveal">
                         <p class="text-slate-400 italic mb-6 leading-relaxed" data-i18n="rev1_text">„Po kilku tygodniach czuję się znacznie lepiej i mam więcej energii.”</p>
                         <p class="font-black text-white text-sm uppercase tracking-wider" data-i18n="rev1_name">— Marek, 54</p>
                     </div>
-                    <div class="bg-black/80 p-8 rounded-3xl border border-white/5 text-center md:text-left">
+                    <div class="bg-black/80 p-8 rounded-3xl border border-white/5 text-center md:text-left reveal">
                         <p class="text-slate-400 italic mb-6 leading-relaxed" data-i18n="rev2_text">„Prosty produkt, ale działa. Czuję większą pewność siebie.”</p>
                         <p class="font-black text-white text-sm uppercase tracking-wider" data-i18n="rev2_name">— Andrzej, 47</p>
                     </div>
-                    <div class="bg-black/80 p-8 rounded-3xl border border-white/5 text-center md:text-left">
+                    <div class="bg-black/80 p-8 rounded-3xl border border-white/5 text-center md:text-left reveal">
                         <p class="text-slate-400 italic mb-6 leading-relaxed" data-i18n="rev3_text">„Dostawa szybka, płatność przy odbiorze daje spokój.”</p>
                         <p class="font-black text-white text-sm uppercase tracking-wider" data-i18n="rev3_name">— Piotr, 58</p>
                     </div>
@@ -347,8 +355,8 @@
         <!-- FAQ -->
         <section id="faq" class="py-20">
             <div class="container mx-auto px-6 max-w-3xl">
-                <h2 data-i18n="faq_title" class="text-4xl font-black text-center mb-12 uppercase italic text-red-600">FAQ</h2>
-                <div class="bg-black/60 rounded-3xl p-6 md:p-8 border border-white/5">
+                <h2 data-i18n="faq_title" class="text-4xl font-black text-center mb-12 uppercase italic text-red-600 reveal">FAQ</h2>
+                <div class="bg-black/60 rounded-3xl p-6 md:p-8 border border-white/5 reveal">
                     <div class="faq-accordion-item">
                         <button class="faq-trigger">
                             <span data-i18n="faqq1">Jak długo trwa dostawa?</span>
@@ -399,6 +407,7 @@
         </section>
     </div>
 
+    <!-- Footer -->
     <footer class="bg-black py-12 border-t border-white/5">
         <div class="container mx-auto px-6 text-center">
             <img src="images/imgi_2_logo.png" alt="Logo" class="h-6 mx-auto mb-10 opacity-30 white-mask-logo">
@@ -408,7 +417,7 @@
                 <a href="#" class="hover:text-red-500">Kontakt</a>
             </div>
             <p class="text-[9px] text-slate-700 uppercase tracking-[0.2em] mb-4">&copy; 2026 PRIMAL ORIGIN WELLNESS. WSZYSTKIE PRAWA ZASTRZEŻONE.</p>
-            <p class="text-[8px] text-slate-800 max-w-2xl mx-auto italic leading-relaxed">Indywidualne efekty mogą się różnić. Produkt jest suplementem diety i nie zastępuje zrównoważonej diety.</p>
+            <p class="text-[8px] text-slate-800 max-w-2xl mx-auto italic leading-relaxed">Indywidualne efekty mogą się różnić. Produkt jest suplementem diety i nie zastępuje zrównoważonej diety. Skonsultuj się z lekarzem przed użyciem, jeśli masz jakiekolwiek schorzenia.</p>
         </div>
     </footer>
 
